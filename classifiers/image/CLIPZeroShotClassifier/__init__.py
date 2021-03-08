@@ -18,7 +18,7 @@ class CLIPZeroShotClassifier(TorchDevice, BaseClassifier):
     :param kwargs: Additional positional arguments.
     """
 
-    def __init__(self, labels: List[str], model_name: str ='ViT-B/32',
+    def __init__(self, labels: List[str] = ["dog","human"], model_name: str ='ViT-B/32',
                  *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.labels = labels
